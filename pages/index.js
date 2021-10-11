@@ -29,8 +29,8 @@ export default function Home() {
                 <div className="w-full h-full order-last col-span-2 lg:order-first lg:col-span-1 max-w-xs md:max-w-md xl:max-w-none mx-auto lg:mx-0">
                   <h1>Bruh moment. Everytime.</h1>
                   <p className="mt-4 lg:max-w-md subheader">
-                    We’re more than a doc. Or a table. Customize Website to work
-                    the way you do.
+                    This site is random and useless I don't even know why I
+                    created it. How are you?
                   </p>
                   <button className="btn btn-lg btn-primary mt-6 mx-auto lg:mx-0">
                     Let's Bruh
