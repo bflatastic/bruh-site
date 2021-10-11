@@ -23,7 +23,7 @@ export default function Home() {
 
       <main id="home" data-scroll-section>
         <div>
-          <div className="wrapper pt-44">
+          <div className="wrapper pt-32 lg:pt-44">
             <div className="text-center lg:text-left lg:py-20 grid grid-cols-2 gap-4">
               <Fade bottom distance="20px">
                 <div className="w-full h-full order-last col-span-2 lg:order-first lg:col-span-1 max-w-xs md:max-w-md xl:max-w-none mx-auto lg:mx-0">
@@ -37,7 +37,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="w-full col-span-2 lg:col-span-1 mx-auto items-center flex justify-center">
-                  <div className="flex absolute justify-center w-96">
+                  <div className="flex justify-center w-52 lg:absolute lg:w-80 xl:w-96">
                     <Image src={moai} />
                   </div>
                 </div>
