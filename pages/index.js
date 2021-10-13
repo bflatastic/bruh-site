@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Fade from "react-reveal/Fade";
 import { MailOpenIcon } from "@heroicons/react/outline";
 import moai from "../public/images/moai.png";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -88,7 +89,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="wrapper pt-20">
+          <div className="wrapper py-20">
             <div className="grid grid-cols-3 gap-10">
               <div className="flex items-center col-span-3 lg:col-span-1">
                 <Fade left distance="20px">
@@ -108,6 +109,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Footer />
       </main>
     </div>
   );

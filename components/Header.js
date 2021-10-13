@@ -4,6 +4,8 @@ import { Fragment } from "react";
 import React, { useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Discord, Twitter } from "@icons-pack/react-simple-icons";
+import OpenSea from "../public/svg/opensea.svg";
 
 const navigation = [
   { name: "Home", href: "#home", current: false },
@@ -37,7 +39,7 @@ function Header() {
               </div>
 
               {/* Mobile Menu Button */}
-              <div className="flex lg:hidden">
+              <div className="flex lg:hidden outline-none focus:outline-none">
                 <Disclosure.Button>
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -72,7 +74,27 @@ function Header() {
             </div>
 
             {/* Right Nav */}
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex space-x-6">
+              <div className="flex items-center space-x-4">
+                <Link href="https://discord.gg">
+                  <a className="hover:opacity-50 transition" target="_blank">
+                    <Discord />
+                  </a>
+                </Link>
+                <Link href="https://twitter.com">
+                  <a className="hover:opacity-50 transition" target="_blank">
+                    <Twitter />
+                  </a>
+                </Link>
+                <Link href="https://opensea.io">
+                  <a
+                    className="hover:opacity-50 transition w-6 h-6"
+                    target="_blank"
+                  >
+                    <Image src={OpenSea}></Image>
+                  </a>
+                </Link>
+              </div>
               <button className="btn btn-primary ml-4">Connect Wallet</button>
             </div>
           </div>
@@ -80,7 +102,7 @@ function Header() {
           {/* NavBar Mobile */}
           <Disclosure.Panel>
             {({ close }) => (
-              <div className="flex w-full lg:hidden text-right justify-end pr-4 bg-dark-gray bg-opacity-90  border-b border-black backdrop-blur-sm saturate-150">
+              <div className="flex w-full lg:hidden text-center justify-center bg-dark-gray bg-opacity-90  border-b border-black backdrop-blur-sm saturate-150">
                 <Transition
                   as={Fragment}
                   enter="transition duration-100 ease-out"
