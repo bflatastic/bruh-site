@@ -12,13 +12,13 @@ function Footer() {
           <div>
             <div className="lg:flex items-center justify-center">
               <div className="flex lg:object-contain items-center justify-center mb-4 lg:justify-left lg:mb-0">
-                <div className="w-14 h-14">
+                <div className="flex w-14 h-14 items-center">
                   <Image src={moai}></Image>
                 </div>
               </div>
               <div className="lg:ml-5">
                 <p className="font-black text-3xl">bruh.</p>
-                <p className="text-lg font-light">Bruh moment. Everytime.</p>
+                <p className="text-lg font-normal">Bruh moment. Everytime.</p>
               </div>
             </div>
             <div>
@@ -27,9 +27,9 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-6 lg:mt-0">
-            <div className="flex flex-col space-y-2">
-              <div className="flex items-center space-x-4 justify-end">
+          <div className="flex justify-center mt-6 lg:mt-0">
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center space-x-4 justify-center lg:justify-end">
                 <Link href="https://discord.gg">
                   <a className="hover:opacity-50 transition" target="_blank">
                     <Discord />
@@ -50,9 +50,9 @@ function Footer() {
                 </Link>
               </div>
               <Link href="https://etherscan.io" passHref>
-                <div className="text-white underline cursor-pointer">
+                <a target="_blank" className="btn btn-primary">
                   Contract address
-                </div>
+                </a>
               </Link>
             </div>
           </div>

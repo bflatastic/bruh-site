@@ -104,7 +104,6 @@ function Header() {
             {({ close }) => (
               <div className="flex w-full lg:hidden text-center justify-center bg-dark-gray bg-opacity-90  border-b border-black backdrop-blur-sm saturate-150">
                 <Transition
-                  as={Fragment}
                   enter="transition duration-100 ease-out"
                   enterFrom="transform scale-95 opacity-0"
                   enterTo="transform scale-100 opacity-100"
@@ -135,6 +134,37 @@ function Header() {
                       </li>
                     ))}
                   </ul>
+                  <div className="flex flex-col lg:hidden items-center justify-center mt-4">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <Link href="https://discord.gg">
+                        <a
+                          className="hover:opacity-50 transition"
+                          target="_blank"
+                        >
+                          <Discord />
+                        </a>
+                      </Link>
+                      <Link href="https://twitter.com">
+                        <a
+                          className="hover:opacity-50 transition"
+                          target="_blank"
+                        >
+                          <Twitter />
+                        </a>
+                      </Link>
+                      <Link href="https://opensea.io">
+                        <a
+                          className="hover:opacity-50 transition w-6 h-6"
+                          target="_blank"
+                        >
+                          <Image src={OpenSea}></Image>
+                        </a>
+                      </Link>
+                    </div>
+                    <button className="btn btn-primary mb-6">
+                      Connect Wallet
+                    </button>
+                  </div>
                 </Transition>
               </div>
             )}

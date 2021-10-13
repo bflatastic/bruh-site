@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import { MailOpenIcon } from "@heroicons/react/outline";
 import moai from "../public/images/moai.png";
 import Footer from "../components/Footer";
+import Timeline from "../components/Timeline";
 
 export default function Home() {
   return (
@@ -67,6 +68,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Section 2 */}
         <div>
           <div className="wrapper pt-20">
             <div className="grid grid-cols-3 gap-10">
@@ -88,6 +90,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Section 3 - Roadmap */}
+        <div>
+          <div className="wrapper pt-32">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-center mb-10">Roadmap</h2>
+              <div className="max-w-6xl mx-auto">
+                <Timeline />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Section 4 */}
         <div>
           <div className="wrapper py-20">
             <div className="grid grid-cols-3 gap-10">
